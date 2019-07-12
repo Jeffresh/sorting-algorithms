@@ -1,15 +1,13 @@
-#include<algorithm>
 #include<cstdlib>
 #include<ctime>
-#include<algorithm>
 #include<iostream>
-// #include "insertionSort.hpp"
-#include "mergeSort.hpp"
+
+#include "sortingAlgorithms.hpp"
 
 
 int main(int argc, char const *argv[])
 {
-    int n = 9;
+    int n = 10;
     int* v;
 
     size_t tam = n;
@@ -38,7 +36,7 @@ int main(int argc, char const *argv[])
         }
 
 
-        mergeSort(v,0,tam);
+        quickSort(v,0,tam);
         // insertionSort(v,5,tam); // start in i+1 to tam-1 v[0-tam-1]
 
 

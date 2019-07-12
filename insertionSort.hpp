@@ -1,4 +1,3 @@
-#include<iostream>
 
 int* sort(int* v, int k, int j)
 {
