@@ -36,8 +36,9 @@ int main(int argc, char const *argv[])
         }
 
 
-        quickSort(v,0,tam);
+        // quickSort(v,1,3);
         // insertionSort(v,5,tam); // start in i+1 to tam-1 v[0-tam-1]
+        heapSort(v,4,5);
 
 
 
