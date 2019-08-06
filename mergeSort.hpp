@@ -1,12 +1,12 @@
 
 
 
-
-int* merge(int* v, int i, int k, int j)
+template<typename T>
+T* merge(T* v, int i, int k, int j)
 {
     int n = j - i   ;
 
-    int w[n];
+    T w[n];
 
     int p = i, q = k;
 
@@ -38,8 +38,8 @@ int* merge(int* v, int i, int k, int j)
     return v;
 }
 
-
-int* mergeSort(int* v, int i, int j)
+template<typename T>
+T* mergeSort(T* v, int i, int j)
 {
     int n = j - i ;
     int n0 = 3;

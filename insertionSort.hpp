@@ -1,5 +1,6 @@
 
-int* sort(int* v, int k, int j)
+template<typename T>
+T* sort(T* v, int k, int j)
 {
         int aux = v[j];
         while(j>k && aux < v[j-1])
@@ -16,8 +17,8 @@ int* sort(int* v, int k, int j)
 
 
 
-
-int* insertionSort(int* v,int in, int end)
+template<typename T>
+T* insertionSort(T* v,int in, int end)
 {
         for(int i = in+1; i< end; i++ )
             sort(v,in,i);

@@ -1,8 +1,8 @@
 
 
 
-
-int partition( int* v, int i , int j )
+template<typename t>
+int partition( t* v, int i , int j )
 {
     int p = i ;
     int x = v[i];
@@ -22,7 +22,8 @@ int partition( int* v, int i , int j )
     return p;
 }
 
-int* quickSort(int* v, int i, int j)
+template<typename T>
+T* quickSort(T* v, int i, int j)
 {
     int n = j - i;
     int n0 = 3;

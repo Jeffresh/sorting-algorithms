@@ -3,12 +3,13 @@
 #include <queue>
 
 
-int* heapSort(int* v, int i, int j)
+template<typename T>
+T* heapSort(T* v, int i, int j)
 {
 
     int tam = i-j;
 
-    std::priority_queue<int, std::vector<int>, std::greater<int> > monticulo;
+    std::priority_queue<T, std::vector<T>, std::greater<T> > monticulo;
 
     for (size_t posi = i; posi !=j ; posi++)
     {
@@ -22,5 +23,7 @@ int* heapSort(int* v, int i, int j)
         monticulo.pop();
     }
     
+
+    return v;
 
 }
